@@ -160,3 +160,32 @@ body {
         max-width: 400px;
     }
 }
+
+.spot-card {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .spotlight {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .image-section {
+    flex: 0 0 60%;
+    margin-left: 20px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
