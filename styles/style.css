@@ -6,6 +6,7 @@
 
 body {
     font-family: arial;
+    
 }
 
 .navbar {
@@ -59,7 +60,6 @@ body {
     max-width: 100%;
     height: 100vh;
     /* margin-left: 50px; */
-    background-color: #4D94E6;
 }
 
 .hero-img {
@@ -88,4 +88,75 @@ body {
     line-height: 1.6;
     margin: 0;
     max-width: 600px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.section-title h2 {
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center; /* Centers cards horizontally */
+    align-items: center; /* Centers cards vertically */
+    align-items: stretch; /* Stretch cards to match the tallest card */
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Image Styling */
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Cards */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
 }
