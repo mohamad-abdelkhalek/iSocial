@@ -17,23 +17,21 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #21DADB;
-    color: black;
 }
 
 .navbar-logo img {
-    height: 90px;
+    height: 60px;
     cursor: pointer;
 }
 
 .navbar-links {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     list-style: none;
 }
 
 .navbar-links a {
-    color: black;
+    color: #21DADB;
     text-decoration: none;
     font-weight: bold;
 }
