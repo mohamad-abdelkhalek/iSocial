@@ -265,6 +265,17 @@ body {
   .icon:hover {
     transform: scale(1.1);
   }
+
+  .footer-bottom {
+    background-color: #21DADB;
+    color: #111;
+    display: flex;
+    font-size: 1em;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    padding: 40px;
+  }
   
   
   
