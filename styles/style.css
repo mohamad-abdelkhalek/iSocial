@@ -188,4 +188,34 @@ body {
     height: auto;
     border-radius: 8px;
   }
+
+  .meth-sec {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    max-width: 100%;
+    margin-top: 90px;
+  }
+
+  .meth-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 90%;
+    
+  }
+  
+  .meth-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text-section h2 {
+    margin-bottom: 20px;
+    color: #21DADB;
+    font-size: 2em;
+  }
+  
   
