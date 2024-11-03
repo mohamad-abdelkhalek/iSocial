@@ -19,7 +19,7 @@ body {
 }
 
 .navbar-logo img {
-    height: 50px;
+    height: 90px;
     cursor: pointer;
 }
 
@@ -58,7 +58,9 @@ body {
     padding: 40px;
     gap: 30px;
     max-width: 100%;
-    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 125px;
+    height: auto;
     /* margin-left: 50px; */
 }
 
@@ -163,29 +165,29 @@ body {
 
 .spot-card {
     display: flex;
-    max-width: 800px;
-    margin: 20px auto;
-    align-items: center;
     justify-content: center;
-    height: 90vh;
+    align-items: center;
+    max-width: 80%; /* Adjust width as needed */
+    margin: 90px auto; /* Centers the card on the page */
+    padding: 20px;
+    gap: 20px; /* Space between text and image */
   }
   
   .spotlight {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    max-width: 50%; /* Ensures the spotlight section takes half the width */
   }
   
   .image-section {
-    flex: 0 0 60%;
-    margin-left: 20px;
+    max-width: 50%; /* Ensures the image section takes the other half */
   }
   
   .card-image {
-    width: 100%;
+    width: 100%; /* Makes the image responsive within its container */
     height: auto;
     border-radius: 8px;
   }
   
+  /* width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px; */
