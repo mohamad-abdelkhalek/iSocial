@@ -24,7 +24,6 @@ body {
     cursor: pointer;
 }
 
-/* Navbar Links Styling */
 .navbar-links {
     display: flex;
     gap: 2rem;
@@ -62,7 +61,6 @@ body {
     margin-top: 85px;
     margin-bottom: 125px;
     height: auto;
-    /* margin-left: 50px; */
 }
 
 .hero-img {
@@ -105,21 +103,19 @@ body {
     font-weight: bold;
 }
 
-/* Card Container */
 .card-container {
     display: flex;
     gap: 50px;
     padding: 20px;
     max-width: 1200px;
     margin: auto;
-    justify-content: center; /* Centers cards horizontally */
-    align-items: center; /* Centers cards vertically */
-    align-items: stretch; /* Stretch cards to match the tallest card */
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
 }
 
-/* Card Styling */
 .card {
-    background-color: #fff;
+    background-color: #21DADB;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
@@ -132,7 +128,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Card Image Styling */
 .card-img {
     width: 100%;
     height: 150px;
@@ -169,14 +164,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80%; /* Adjust width as needed */
-    margin: 90px auto; /* Centers the card on the page */
+    max-width: 90%;
+    margin: 90px auto;
     padding: 20px;
-    gap: 20px; /* Space between text and image */
+    gap: 20px;
   }
   
   .spotlight {
-    max-width: 50%; /* Ensures the spotlight section takes half the width */
+    max-width: 50%;
   }
 
   .spotlight h2 {
@@ -186,11 +181,11 @@ body {
   }
   
   .image-section {
-    max-width: 50%; /* Ensures the image section takes the other half */
+    max-width: 50%;
   }
   
   .card-image {
-    width: 100%; /* Makes the image responsive within its container */
+    width: 100%;
     height: auto;
     border-radius: 8px;
   }
