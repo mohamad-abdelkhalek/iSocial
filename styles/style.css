@@ -59,7 +59,7 @@ body {
     padding: 40px;
     gap: 30px;
     max-width: 100%;
-    margin-top: 50px;
+    margin-top: 85px;
     margin-bottom: 125px;
     height: auto;
     /* margin-left: 50px; */
@@ -82,6 +82,7 @@ body {
 }
 
 .hero-content h2 {
+    color: #21DADB;
     font-size: 2em;
     margin: 0;
 }
@@ -100,7 +101,7 @@ body {
 
 .section-title h2 {
     font-size: 2em;
-    color: #333;
+    color: #21DADB;
     font-weight: bold;
 }
 
@@ -176,6 +177,12 @@ body {
   
   .spotlight {
     max-width: 50%; /* Ensures the spotlight section takes half the width */
+  }
+
+  .spotlight h2 {
+    margin-bottom: 20px;
+    color: #21DADB;
+    font-size: 2em;
   }
   
   .image-section {
