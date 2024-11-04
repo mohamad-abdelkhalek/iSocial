@@ -1,3 +1,4 @@
+// navbar
 gsap.from(".navbar-logo img", {
     duration: 2,
     opacity: 1,
@@ -13,29 +14,48 @@ gsap.from(".navbar-logo img", {
     stagger: 0.2
   });
 
-  gsap.from(".hero-img", {
-    opacity: 1,
-    scale: 0,
-    duration: 1.4,
-    ease: "power2.out",
-  });
 
-  gsap.from(".hero-content h2", {
-    opacity: 0,
-    y: 30,
-    duration: 1.2,
-    delay: 0.5,
-    ease: "power2.out",
-  });
+// hero section
+const heroSection = document.querySelector('.hero-section');
+function animateHeroSection() {
+    gsap.from(".hero-img", {
+        opacity: 1,
+        scale: 0,
+        duration: 1.4,
+        ease: "power2.out",
+    });
 
-  gsap.from(".hero-content p", {
-    opacity: 0,
-    y: 30,
-    duration: 1.2,
-    delay: 0.7,
-    ease: "power2.out",
-  });
+    gsap.from(".hero-content h2", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        delay: 0.5,
+        ease: "power2.out",
+    });
 
+    gsap.from(".hero-content p", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        delay: 0.7,
+        ease: "power2.out",
+    });
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateHeroSection(); // Trigger animations when the section is in view
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+observer.observe(heroSection);
+
+
+// cards sections
   gsap.from(".section-title h2", {
     opacity: 0,
     y: 50,
