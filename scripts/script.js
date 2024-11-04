@@ -1,5 +1,6 @@
 const heroSection = document.querySelector('.hero-section');
 const whyPartnerSection = document.querySelector('#why-partner');
+const ourMethodSection = document.querySelector('#our-meth');
 
 // navbar
 gsap.from(".navbar-logo img", {
@@ -120,3 +121,42 @@ const whyPartnerObserver = new IntersectionObserver((entries) => {
 });
 
 whyPartnerObserver.observe(whyPartnerSection);
+
+
+// Our Methodology section
+function animateOurMethodSection() {
+    gsap.from("#our-meth .meth-content .meth-image", {
+        opacity: 0,
+        scale: 0.1,
+        duration: 1.4,
+        ease: "power2.out",
+    });
+
+    gsap.from("#our-meth .meth-content .text-section h2", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        delay: 0.5,
+        ease: "power2.out",
+    });
+
+    gsap.from("#our-meth .meth-content .text-section p", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        delay: 0.7,
+        ease: "power2.out",
+    });
+}
+
+const ourMethodObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateOurMethodSection();
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+ourMethodObserver.observe(ourMethodSection);
