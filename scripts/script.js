@@ -35,3 +35,28 @@ gsap.from(".navbar-logo img", {
     delay: 0.7,
     ease: "power2.out",
   });
+
+  gsap.from(".section-title h2", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: "#our-exp",
+      start: "top 80%",
+      toggleActions: "restart none restart none",
+    }
+  });
+  
+  gsap.from(".card", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".card-container",
+      start: "top 80%",
+      toggleActions: "restart none restart none",
+    }
+  });
