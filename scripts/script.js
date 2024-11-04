@@ -1,3 +1,6 @@
+const heroSection = document.querySelector('.hero-section');
+const whyPartnerSection = document.querySelector('#why-partner');
+
 // navbar
 gsap.from(".navbar-logo img", {
     duration: 2,
@@ -16,7 +19,6 @@ gsap.from(".navbar-logo img", {
 
 
 // hero section
-const heroSection = document.querySelector('.hero-section');
 function animateHeroSection() {
     gsap.from(".hero-img", {
         opacity: 1,
@@ -80,3 +82,41 @@ observer.observe(heroSection);
       toggleActions: "restart none restart none",
     }
   });
+
+// why parter? section
+function animateWhyPartnerSection() {
+    gsap.from("#why-partner .spotlight h2", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        ease: "power2.out",
+    });
+
+    gsap.from("#why-partner .spotlight p", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        delay: 0.5,
+        ease: "power2.out",
+    });
+
+    gsap.from("#why-partner .image-section .card-image", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.4,
+        delay: 0.7,
+        ease: "power2.out",
+    });
+}
+
+const whyPartnerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateWhyPartnerSection(); // Trigger animations when the section is in view
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+whyPartnerObserver.observe(whyPartnerSection);
