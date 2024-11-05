@@ -160,3 +160,30 @@ const ourMethodObserver = new IntersectionObserver((entries) => {
 });
 
 ourMethodObserver.observe(ourMethodSection);
+
+// Let's Connect section
+window.addEventListener("load", () => {
+    gsap.registerPlugin(ScrollTrigger);
+  
+    const shakeAnimation = gsap.fromTo(
+      ".connect-section",
+      { x: -15 },
+      {
+        x: 15,
+        duration: 0.3,
+        repeat: 5,
+        yoyo: true,
+        paused: true,
+      }
+    );
+  
+    // (ScrollTrigger) to play the shake animation when in view
+    ScrollTrigger.create({
+      trigger: ".connect-section",
+      start: "top 80%",
+      onEnter: () => shakeAnimation.restart(),
+      onEnterBack: () => shakeAnimation.restart(),
+    });
+  });
+  
+  
