@@ -48,9 +48,9 @@ Welcome to **iSocial Lebanon**, a vibrant digital marketing platform designed to
    git clone https://github.com/username/isocial-lebanon.git
 
 2. Navigate to the project directory:
-  ```bash
-  cd isocial-lebanon
-```
+     ```bash
+     cd isocial-lebanon
+      ```
 3. Open index.html in your preferred browser to view the website.
 
 
