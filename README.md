@@ -1,4 +1,4 @@
-# iSocial Lebanon - Digital Marketing Website
+# iSocial Lebanon - Digital Marketing Website Services
 
 Welcome to **iSocial Lebanon**, a vibrant digital marketing platform designed to elevate your brand through innovative strategies and creative excellence. This repository showcases the source code for the iSocial Lebanon website, built with **HTML**, **CSS**, and **GSAP** for stunning animations.
 
